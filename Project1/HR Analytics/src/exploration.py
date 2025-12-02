@@ -30,6 +30,7 @@ df.info() # an overall summery of the above steps, also lets you know the count 
 df.isnull().sum().sort_values(ascending= False) #have a summary of misisng values 
 df.isnull().mean().sort_values(ascending= False) * 100 #missing values as % breakdown
 df.nunique().sort_values(ascending=False) #count of unique values 
+df.duplicated() #look for duplicated rolls as they my inflate aspects like mean
 
 """
 once a general check of loaded data is done
