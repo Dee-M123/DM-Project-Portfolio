@@ -23,7 +23,7 @@ When it comes to the distribution of employees across departments, the data is v
 
 With that in mind: 
 
-   		Hypothesis 1; we can theorise that larger departments will have to take up more training due workload related factors. 
+   		Hypothesis 1: we can theorise that larger departments will have to take up more training due workload related factors. 
 
    		Hypothesis 2: Meeting KPI targets might be easier for larger departments 
 
