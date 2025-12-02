@@ -1,4 +1,4 @@
-# Employee’s Performance:
+# Employee Performance Analytics
 
 Employee performance and the desire to optimise a labourforce towards higher productivity, is a topic at the lips of every business owner/runner. Traditional forms of encouraging employees towards higher productivity have been explored in length. Companies today spend a good amount of money in assessing productivity across different operational units, teams and departments as well. 
 
