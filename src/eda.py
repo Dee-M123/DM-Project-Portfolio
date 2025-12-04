@@ -6,14 +6,14 @@ class HREDA:
     utilities for generating descriptive statistics, distribution summaries, and
     categorical value summaries.
     """
-    ...
+    
 
     def __init__(self, df: pd.DataFrame):
         """
         Initialize the HREDA object with a dataframe.
         
         """
-        ....
+        
         
         self.df = df
         self.numeric_col = df.select_dtypes(include=["int64", "float64"]).columns.tolist()
@@ -29,7 +29,7 @@ class HREDA:
             Transposed dataframe containing count, mean, std, min, quartiles, and max
             for each numeric column.
         """
-        ...
+        
         return self.df[self.numeric_col].describe().T
 
     def numeric_distribution_stats(self, col: str) -> Dict[str, float]:
@@ -44,7 +44,7 @@ class HREDA:
         -------
             A dictionary containing mode, min, max, and specific quantiles.
         """
-        ...
+        
         numeric_data = self.df[col].dropna()
 
         return {
@@ -66,7 +66,7 @@ class HREDA:
         -------
             DataFrame showing counts and percentage share of each category.
         """
-        ...
+        
         counts = self.df[col].value_counts(dropna=False)
         perc = self.df[col].value_counts(normalize=True, dropna=False) * 100
 
@@ -81,5 +81,5 @@ class HREDA:
             A dictionary where each key is a column name and each value is a 
             summary dataframe containing category counts and percentages.
         """
-        ...
+        
         return {col: self.summarise_cat(col) for col in self.categorical_cols}
