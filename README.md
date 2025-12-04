@@ -1,42 +1,59 @@
 # Employee Performance Analytics
+ 
+Employee performance and the desire to optimise a labourforce towards higher productivity, is a topic at the lips of every business owner/runner. Traditional forms of encouraging employees towards higher productivity have been explored in length. Companies today spend a good amount of money in assessing productivity across different operational units, teams and departments as well.
+ 
+# Dataset 
+The labour force being one of the key drivers of overall company revenue, it is important to have a full understanding of what kind of insights we can collect from the assumed, as well as researched performance indicators; hence why the selected dataset for this project centres around HR performance analytics. The dataset can be accessed directly on the Kaggle platform.
 
-Employee performance and the desire to optimise a labourforce towards higher productivity, is a topic at the lips of every business owner/runner. Traditional forms of encouraging employees towards higher productivity have been explored in length. Companies today spend a good amount of money in assessing productivity across different operational units, teams and departments as well. 
+ 
+# Data Size
+The datasets contain 14 columns, most of the columns are related to traditional key indicators or measures, but do not have any modern measures/features. The data set has around 17,417 rows.  Actual shape of the dataset being (17417, 13).  The data-type ranges from numeric (8 columns) to object (5 columns). The overall memory usage stats slightly over 1,7 mbs
 
+ # Project Goals
 In assessing employee data, companies can then utilise this information to make strategies that create some kind of competitive edge within the labour force, and respective field of operations. 
 
-The labour force being one of the key drivers of overall company revenue, it is important to have a full understanding of what kind of insights we can collect from the assumed, as well as researched performance indicators; hence why the selected dataset for this project centres around HR performance analytics. The dataset can be accessed directly on the [Kaggle platform]([url](https://www.kaggle.com/datasets/sanjanchaudhari/employees-performance-for-hr-analytics)).
+Having KPI and awards as our notable performance indicators, we can see if various predictors of performance can contribute to the success of mentioned performance indicators. 
 
-# General (initial overview) assessment of the dataset:
+Training of employees is seen as a necessary aspect of performance enhancement. Looking into to see if the number of training has any influence on the training scores:
 
-The datasets contain 14 columns, most of the columns are related to traditional key indicators or measures, but do not have any modern measures/features. The data set has around 17,417 rows.  Actual shape of the dataset being (17417, 13).  The data-type ranges from numeric (8 columns) to object (5 columns). The overall memory usage stats slightly over 1,7 mbs 
- 
-From the overview, we can see that the average number of trainings falls close to the min. The data also shows us that majority of the labourforce falls below 40 years of age. Only 25% of the labourforce are  40 and above. The average rating fall above the average (2.5). Most people do not meet a KPI score of more than 80, and most have not won any performance related award. The average training score is 63%. 
+		Hypothesis 1: Employees who attend more trainings have higher average training scores. 
 
-Two columns have missing entries. The columns are education and previous-year_rating. As expected, only the employee ID column had a clean record of unique values. The number of unique values in most columns. It would be interesting to look into the individual unique values per column to see why the specific unique values exist for identified measures/metric. 
-There are 70.7% more males than females in this dataset. 69.1% of employees have a bachelor's degree, 29.1% have a master's or higher, and 1.7% of employees have secondary school education or lower.  Over 55.99% of recruitment takes place via undisclosed processes, while 42.2% is done via sourcing. Only 1.8% is via referral programmes. Sales & Marketing (31.3%) and Operations (20.2%) are the largest departments.
+		Hypothesis 2: Employees who met KPIs (> 80%) in the past year will have higher current average training scores. 
 
-There is a moderate (0.6) correlation between age and length of service. Most of the correlation on the heatmap falls on the negative side, but there is a very weak positive correlation of number of training with training scores and awards. There is also a very weak positive correlation of age with awards, and ratings. Average score does have a small impact on awards, ratings and KPIs. 
+Some departments have new hires in them, and since they are not as experienced as other members that have been employed longer, there is a possibility that performance is lowered as a result:
 
-# Possible areas of exploration (aspects interesting to look into):
+		Hypothesis 3: New hires have lower KPI achievement rates than tenured employees.
 
-When it comes to the distribution of employees across departments, the data is very unevenly distributed, as earlier alluded to.  With this information, it would be interesting to see how KPI expectations and ratings vary between larger departments, and smaller departments. How training is distributed across the departments would be insightful to take a deeper dive into.
+Efficiency and execution of goals, can mean needing a large labour force. For departments that are larger, there could be an advantage in respect to meeting KPI and having awards. They could also take up more trainings. 
 
-With that in mind: 
+		Hypothesis 4: Employees in larger departments have a higher number of   trainings.
 
-   		Hypothesis 1: we can theorise that larger departments will have to take up more training due to workload related factors. 
+# Project Structure
+The project has four main folders. The Data folder contains uncleaned and cleaned csv files of the data set. The Notebooks folder has all the used notebooks in it. In the src folder are the scrips, and the reports folder contains the slides.  
 
-   		Hypothesis 2: Meeting KPI targets might be easier for larger departments 
+# Project Structure
+● How to Run 
+○ Environment requirements (Python version, main libraries). 
+○ How to install dependencies (pip install -r requirements.txt). 
+○ How to run the main analysis (which notebooks/scripts to execute). 
 
-   		Hypothesis 3: there is a correlation between larger departments and awards
+# Results 
+H1: The number of training sessions do not guarantee higher scores, this varies from person to person. Correlation here is very weak. 
 
-Most people hold a bachelor's degree or higher, it would be interesting to see if education levels contribute to rating and training scores, as well KPI goals being met.
+H2: Surprisingly, more trainings correlate with slightly lower odds of meeting KPIs > 80
 
-	  	Hypothesis 4: education is directly tied to the scores and KPI goals
+H3: There is no significant difference between the tenured employees and new hires when it comes to KPI goals being met, and average scores.
 
-There is a higher number of male hired as opposed to females, it would be important to have a look at how the female scores and KPI performances defer from those of men: 
+H4: There is a weak but positive indication that the larger the department, the higher the number of trainings. Meeting One’s KPIs is not really influenced by department size. However, the number of awards is influenced by department size.
 
-	  	Hypothesis 5: there is a gap in the scoring, and awarding of females
+# Key Insights
 
-The project will also analyse how the skewed regional distribution plays a role in the overall metrical measures of performance, and how the different hiring channels contribute (if at all) to overall performance. 
+Quantity of training alone is not a reliable performance booster. Training programs may need personalisation, focusing on employees’ skill gaps rather than applying a “one-size-fits-all” approach. A proactive development approach might need to be assigned to employees that are underperforming, as opposed to throwing them into another training programme .
+
+Performance is not strongly tied to experience within the company. Onboarding programs for new hires seem effective enough to bring them up to speed with experienced employees. Resources might be better spent on continuous performance support rather than assuming tenured staff always outperform newer employees.
+
+Training allocation is influenced by departmental scale, this could be as a result of more resources or structured HR processes in larger teams (traditional company structure). KPI achievement not being directly linked to department size, suggests that team size alone doesn’t improve productivity. highlighting the importance of individual performance management. 
+
+Awards being higher in bigger departments could mean recognition programs are scale based, and merit based, looking into this to ensure fair assessment, would be prudent for future HR policies within the company, where fairness is concerned. 
 
 
