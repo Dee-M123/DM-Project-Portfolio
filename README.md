@@ -9,7 +9,7 @@ link: https://www.kaggle.com/datasets/sanjanchaudhari/employees-performance-for-
 
  
 # Data Size
-The datasets contain 14 columns, most of the columns are related to traditional key indicators or measures, but do not have any modern measures/features. The data set has around 17,417 rows.  Actual shape of the dataset being (17417, 13).  The data-type ranges from numeric (8 columns) to object (5 columns). The overall memory usage stats slightly over 1,7 mbs
+The datasets contain 14 columns, most of the columns are related to traditional key indicators or measures, but do not have any modern measures/features. The data set has around 17,417 rows.  Actual shape of the dataset being (17417, 13).  The data-type ranges from numeric (8 columns) to object (5 columns). The overall memory usage stats are slightly over 1,7 mbs
 
  # Project Goals
 In assessing employee data, companies can then utilise this information to make strategies that create some kind of competitive edge within the labour force, and respective field of operations. 
