@@ -5,6 +5,8 @@ Employee performance and the desire to optimise a labourforce towards higher pro
 # Dataset 
 The labour force being one of the key drivers of overall company revenue, it is important to have a full understanding of what kind of insights we can collect from the assumed, as well as researched performance indicators; hence why the selected dataset for this project centres around HR performance analytics. The dataset can be accessed directly on the Kaggle platform.
 
+link: https://www.kaggle.com/datasets/sanjanchaudhari/employees-performance-for-hr-analytics
+
  
 # Data Size
 The datasets contain 14 columns, most of the columns are related to traditional key indicators or measures, but do not have any modern measures/features. The data set has around 17,417 rows.  Actual shape of the dataset being (17417, 13).  The data-type ranges from numeric (8 columns) to object (5 columns). The overall memory usage stats slightly over 1,7 mbs
