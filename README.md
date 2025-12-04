@@ -16,7 +16,7 @@ In assessing employee data, companies can then utilise this information to make 
 
 Having KPI and awards as our notable performance indicators, we can see if various predictors of performance can contribute to the success of mentioned performance indicators. 
 
-Training of employees is seen as a necessary aspect of performance enhancement. Looking into to see if the number of training has any influence on the training scores:
+Training of employees is seen as a necessary aspect of performance enhancement. Looking into the predictor, to see if the number of trainings has any influence on the training scores and KPIs would be useful for structuring:
 
 		Hypothesis 1: Employees who attend more trainings have higher average training scores. 
 
