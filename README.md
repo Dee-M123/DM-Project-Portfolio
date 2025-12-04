@@ -40,25 +40,13 @@ The project is organized into four main folders:
 5. README.md – project documentation.
 
 
-How to Run the Project:
+# How to Run the Project:
 1. Environment Requirements
 This project was developed using:
 Python version: 3.12.12 (Google Colab)
 Core Libraries:
 
-		pandas
-		
-		numpy
-		
-		matplotlib
-		
-		seaborn
-		
-		scipy
-		
-		statsmodels
-		
-		scikit-learn
+		pandas, numpy, matplotlib, seaborn, scipy, statsmodels & scikit-learn
 
 These libraries are pre-installed in Google Colab, but if running locally, they must be installed manually.
 
