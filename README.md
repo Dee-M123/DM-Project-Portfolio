@@ -34,6 +34,7 @@ Efficiency and execution of goals, can mean needing a large labour force. For de
 The project is organized into four main folders: 
 
 Project1/
+
 │
 ├── Data/
 │   ├── Raw Data/       # Original raw CSV files
