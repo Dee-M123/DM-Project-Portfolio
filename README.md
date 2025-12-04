@@ -31,13 +31,82 @@ Efficiency and execution of goals, can mean needing a large labour force. For de
 		Hypothesis 4: Employees in larger departments have a higher number of   trainings.
 
 # Project Structure
-The project has four main folders. The Data folder contains uncleaned and cleaned csv files of the data set. The Notebooks folder has all the used notebooks in it. In the src folder are the scrips, and the reports folder contains the slides.  
+The project is organized into four main folders: 
 
-# Project Structure
-● How to Run 
-○ Environment requirements (Python version, main libraries). 
-○ How to install dependencies (pip install -r requirements.txt). 
-○ How to run the main analysis (which notebooks/scripts to execute). 
+Project1/
+│
+├── Data/
+│   ├── Raw Data/       # Original raw CSV files
+│   └── Cleaned Dataset/     # Cleaned CSV files ready for analysis
+│
+├── Notebooks/
+│   ├── analytics.ipynb
+│   ├── data_cleaning.ipynb
+│   └── eda.ipynb
+│
+├── src/
+│   └── eda.py           # Main Python script containing the HREDA class
+│
+├── Reports/
+│   ├── slides/          # Presentation slides
+│   ├── stats_summary/   # Summary statistics and outputs
+│   └── images/          # Plots and images
+│
+└── README.md            # Project documentation
+
+How to Run the Project:
+1. Environment Requirements
+
+This project was developed using:
+
+Python version: 3.12.12 (Google Colab)
+
+Core Libraries:
+
+		pandas
+		
+		numpy
+		
+		matplotlib
+		
+		seaborn
+		
+		scipy
+		
+		statsmodels
+		
+		scikit-learn
+
+These libraries are pre-installed in Google Colab, but if running locally, they must be installed manually.
+
+2. Installing Dependencies
+
+If running locally:
+
+		pip install -r requirements.txt
+
+3. Importing the EDA Class in Google Colab
+
+To load the custom HREDA class directly from GitHub, run:
+
+		!wget -O eda.py https://raw.githubusercontent.com/Dee-M123/DM-Project1-Portfolio-HR-Analytics/refs/heads/main/src/eda.py
+
+
+Reload and import:
+
+		from importlib import reload
+		reload(__import__("eda"))
+		from eda import HREDA
+
+
+Initialize the EDA object:
+
+		eda = HREDA(df)
+
+4. Running the Main Analysis
+
+Simply open and run the notebooks in the notebooks/
+ 
 
 # Results 
 H1: The number of training sessions do not guarantee higher scores, this varies from person to person. Correlation here is very weak. 
