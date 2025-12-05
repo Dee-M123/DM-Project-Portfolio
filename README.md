@@ -1,6 +1,6 @@
 # Employee Performance Analytics
  
-Employee performance and the desire to optimise a labourforce towards higher productivity, is a topic at the lips of every business owner/runner. Traditional forms of encouraging employees towards higher productivity have been explored in length. Companies today spend a good amount of money in assessing productivity across different operational units, teams and departments as well.
+Employee performance and the desire to optimise a labourforce towards higher productivity, is a topic at the lips of every business owner/runner. Traditional forms of encouraging employees towards higher productivity have been explored in length. Companies today spend a good amount of money in assessing productivity across different operational units, teams and departments as well. This is  why this type of project still remains relevant. 
  
 # Dataset 
 The labour force being one of the key drivers of overall company revenue, it is important to have a full understanding of what kind of insights we can collect from the assumed, as well as researched performance indicators; hence why the selected dataset for this project centres around HR performance analytics. The dataset can be accessed directly on the Kaggle platform.
@@ -9,7 +9,7 @@ link: https://www.kaggle.com/datasets/sanjanchaudhari/employees-performance-for-
 
  
 # Data Size
-The datasets contain 14 columns, most of the columns are related to traditional key indicators or measures, but do not have any modern measures/features. The data set has around 17,417 rows.  Actual shape of the dataset being (17417, 13).  The data-type ranges from numeric (8 columns) to object (5 columns). The overall memory usage stats are slightly over 1,7 mbs
+The datasets contain 14 columns, most of the columns are related to traditional key indicators or measures, but do not have any modern measures/features. The dataset has around 17,417 rows.  Actual shape of the dataset being (17417, 13).  The data-type ranges from numeric (8 columns) to object (5 columns). The overall memory usage stats are slightly over 1,7 mbs
 
  # Project Goals
 In assessing employee data, companies can then utilise this information to make strategies that create some kind of competitive edge within the labour force, and respective field of operations. 
@@ -20,15 +20,15 @@ Training of employees is seen as a necessary aspect of performance enhancement. 
 
 		Hypothesis 1: Employees who attend more trainings have higher average training scores. 
 
-		Hypothesis 2: Employees who met KPIs (> 80%) in the past year attend more trainings. 
+		Hypothesis 2: Employees who met KPIs (> 80%) in the past year, attended more trainings. 
 
-Some departments have new hires in them, and since they are not as experienced as other members that have been employed longer, there is a possibility that performance is lowered as a result:
+Some departments have new hires in them, and since they are not as "experienced" as other members that have been employed longer, there is a possibility that performance is lowered as a result:
 
 		Hypothesis 3: New hires have lower KPI achievement rates than tenured employees.
 
 Efficiency and execution of goals, can mean needing a large labour force. For departments that are larger, there could be an advantage in respect to meeting KPI and having awards. They could also take up more trainings. 
 
-		Hypothesis 4: Employees in larger departments have a higher number of   trainings.
+		Hypothesis 4: Employees in larger departments have a higher number of trainings.
 
 # Project Structure
 The project is organized into four main folders: 
@@ -82,7 +82,7 @@ H2: Surprisingly, more trainings correlate with slightly lower odds of meeting K
 
 H3: There is no significant difference between the tenured employees and new hires when it comes to KPI goals being met, and average scores.
 
-H4: There is a weak but positive indication that the larger the department, the higher the number of trainings. Meeting One’s KPIs is not really influenced by department size. However, the number of awards is influenced by department size.
+H4: There is a weak but positive indication that the larger the department will have higher number number of trainings. Meeting One’s KPIs is not really influenced by department size. However, the number of awards is influenced by department size.
 
 # Key Insights and Conclusion 
 
